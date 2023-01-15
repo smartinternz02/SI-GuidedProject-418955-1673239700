@@ -17,7 +17,7 @@ public class ApiCall {
 		
 		HttpRequest request = HttpRequest.newBuilder()
 				.uri(URI.create("http://skyscanner.onrender.com/api/flights?origin="+p2+"&destination="+p3+"&currency=INR&departureDate="+d))
-				.header("x-rapidapi-key", "2d2afdb577mshe01b4387e962d72p133afajsn1ee23362cc2b")
+				.header("x-rapidapi-key", "1eac24282dmsh4267d042a087ad5p14cb43jsn151923014c16")
 				.header("x-rapidapi-host", "skyscanner44.p.rapidapi.com")
 				.method("GET", HttpRequest.BodyPublishers.noBody())
 				.build();
@@ -31,7 +31,7 @@ public class ApiCall {
 //		System.out.println("http://skyscanner.onrender.com/api/flights?origin="+p2+"&destination="+p3+"&currency=INR&departureDate="+d);
 		HttpRequest request = HttpRequest.newBuilder()
 				.uri(URI.create("http://skyscanner.onrender.com/api/datewiseflights?origin="+p2+"&destination="+p3+"&currency=INR&departureDate="+d+"&returnDate="+d2))
-				.header("x-rapidapi-key", "2d2afdb577mshe01b4387e962d72p133afajsn1ee23362cc2b")
+				.header("x-rapidapi-key", "1eac24282dmsh4267d042a087ad5p14cb43jsn151923014c16")
 				.header("x-rapidapi-host", "skyscanner44.p.rapidapi.com")
 				.method("GET", HttpRequest.BodyPublishers.noBody())
 				.build();
@@ -44,7 +44,7 @@ public class ApiCall {
 	{
 				HttpRequest request = HttpRequest.newBuilder()
 				.uri(URI.create("http://skyscanner.onrender.com/api/routes?origin="+p2+"&destination="+p3+"&currency=INR&departureDate="+d))
-				.header("x-rapidapi-key", "2d2afdb577mshe01b4387e962d72p133afajsn1ee23362cc2b")
+				.header("x-rapidapi-key", "1eac24282dmsh4267d042a087ad5p14cb43jsn151923014c16")
 				.header("x-rapidapi-host", "skyscanner44.p.rapidapi.com")
 				.method("GET", HttpRequest.BodyPublishers.noBody())
 				.build();
@@ -61,7 +61,7 @@ public class ApiCall {
 	public String cntrys() throws IOException, InterruptedException{
 		HttpRequest request = HttpRequest.newBuilder()
 				.uri(URI.create("http://skyscanner.onrender.com/api/countries"))
-				.header("x-rapidapi-key", "2d2afdb577mshe01b4387e962d72p133afajsn1ee23362cc2b")
+				.header("x-rapidapi-key", "1eac24282dmsh4267d042a087ad5p14cb43jsn151923014c16")
 				.header("x-rapidapi-host", "codesofcountry.p.rapidapi.com")
 				.method("GET", HttpRequest.BodyPublishers.noBody())
 				.build();
@@ -73,7 +73,7 @@ public class ApiCall {
 	public String placess(String curr,String code,String cntry,String locale) throws IOException, InterruptedException{
 		HttpRequest request = HttpRequest.newBuilder()
 				.uri(URI.create("http://skyscanner.onrender.com/api/places?country="+cntry))
-				.header("x-rapidapi-key", "2d2afdb577mshe01b4387e962d72p133afajsn1ee23362cc2b")
+				.header("x-rapidapi-key", "1eac24282dmsh4267d042a087ad5p14cb43jsn151923014c16")
 				.header("x-rapidapi-host", "skyscanner44.p.rapidapi.com")
 				.method("GET", HttpRequest.BodyPublishers.noBody())
 				.build();

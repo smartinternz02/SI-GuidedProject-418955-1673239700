@@ -8,7 +8,7 @@
 		<version>3.0.1</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>com.ravibabu</groupId>
+	<groupId>com.admin</groupId>
 	<artifactId>flightaware</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>flightaware</name>
